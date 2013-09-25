@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>NSOperationQueue</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
+
+NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+    &lt;#code#&gt;
+}];
+
+NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+    &lt;#code#&gt;
+}];
+
+[op2 addDependency:op1];
+[operationQueue addOperation:op2];
+[operationQueue addOperation:op1];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4CBE973B-D50B-435C-BAD7-2B2B79B29A2D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSOperationQueue with NSBlockOperation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
