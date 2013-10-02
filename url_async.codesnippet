@@ -3,34 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>NSOperationQueue</string>
+	<string>url_async</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
+	<string>NSURL *url = [NSURL URLWithString:@"&lt;#url#&gt;"];
+NSURLRequest *request = [NSURLRequest requestWithURL:url];
+[NSURLConnection sendAsynchronousRequest:request
+                                   queue:[NSOperationQueue mainQueue]
+                       completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+{
 
-NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
-    &lt;#code#&gt;
+    if (error) {
+       NSLog(@"%@", error);
+       return;
+    }
+
+    NSLog(@"Loaded %i bytes", data.length);
+
 }];
-
-NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
-    &lt;#code#&gt;
-}];
-
-[op2 addDependency:op1];
-[operationQueue addOperation:op2];
-[operationQueue addOperation:op1];
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4CBE973B-D50B-435C-BAD7-2B2B79B29A2D</string>
+	<string>BD8B4A25-F836-4825-80A6-CF5930042B34</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSOperationQueue with NSBlockOperation</string>
+	<string>NSURLConnection sendAsynchronousRequest</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSOperationQueue</string>
+	<string>url_async</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
