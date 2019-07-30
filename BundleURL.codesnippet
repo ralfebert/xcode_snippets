@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dispatch_async_main</string>
+	<string>Bundle URL</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_main_queue(), ^{
-    &lt;#code#&gt;
-});</string>
+	<string>Bundle.main.url(forResource: &lt;#T##String?#&gt;, withExtension: &lt;#T##String?#&gt;)!</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>313165D1-ECD4-4D6C-9845-763EF5E786BF</string>
+	<string>9683797C-24EA-46D5-A26D-F518393DE896</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create a url for a file from the main bundle</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispatch_async_main</string>
+	<string>Bundle URL</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
