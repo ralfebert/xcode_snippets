@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>Bundle URL</string>
+	<string>UIWindow Create In AppDelegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>Bundle.main.url(forResource: &lt;#T##String?#&gt;, withExtension: &lt;#T##String?#&gt;)!</string>
+	<string>let window = UIWindow()
+window.rootViewController = ExampleViewController()
+window.makeKeyAndVisible()
+self.window = window</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9683797C-24EA-46D5-A26D-F518393DE896</string>
+	<string>C4773BB0-6309-4E2D-ACF3-0FCCB1DC94C5</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Create a url for a file from the main bundle</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Bundle URL</string>
+	<string>UIWindow Create In AppDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
